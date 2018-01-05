@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6104E80B1FFE0D960041E86B /* DKSKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E8061FFE0D960041E86B /* DKSKeyboard.m */; };
+		6104E80C1FFE0D960041E86B /* DKSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E8081FFE0D960041E86B /* DKSTextView.m */; };
+		6104E80F1FFE21270041E86B /* DKSMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E80E1FFE21270041E86B /* DKSMoreView.m */; };
+		6104E8121FFE215B0041E86B /* DKSEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E8111FFE215B0041E86B /* DKSEmojiView.m */; };
+		613841FA1FFF620200407CC0 /* UIView+FrameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 613841F91FFF620200407CC0 /* UIView+FrameTool.m */; };
+		6140FFB01F5FDB750085674D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140FFAF1F5FDB750085674D /* main.m */; };
+		6140FFB31F5FDB750085674D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140FFB21F5FDB750085674D /* AppDelegate.m */; };
+		6140FFB61F5FDB750085674D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140FFB51F5FDB750085674D /* ViewController.m */; };
+		6140FFB91F5FDB750085674D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6140FFB71F5FDB750085674D /* Main.storyboard */; };
+		6140FFBB1F5FDB750085674D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6140FFBA1F5FDB750085674D /* Assets.xcassets */; };
+		6140FFBE1F5FDB750085674D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6140FFBC1F5FDB750085674D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6104E8051FFE0D960041E86B /* DKSKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKSKeyboard.h; sourceTree = "<group>"; };
+		6104E8061FFE0D960041E86B /* DKSKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKSKeyboard.m; sourceTree = "<group>"; };
+		6104E8071FFE0D960041E86B /* DKSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKSTextView.h; sourceTree = "<group>"; };
+		6104E8081FFE0D960041E86B /* DKSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKSTextView.m; sourceTree = "<group>"; };
+		6104E80D1FFE21270041E86B /* DKSMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSMoreView.h; sourceTree = "<group>"; };
+		6104E80E1FFE21270041E86B /* DKSMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSMoreView.m; sourceTree = "<group>"; };
+		6104E8101FFE215B0041E86B /* DKSEmojiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSEmojiView.h; sourceTree = "<group>"; };
+		6104E8111FFE215B0041E86B /* DKSEmojiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSEmojiView.m; sourceTree = "<group>"; };
+		613841F81FFF620200407CC0 /* UIView+FrameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameTool.h"; sourceTree = "<group>"; };
+		613841F91FFF620200407CC0 /* UIView+FrameTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameTool.m"; sourceTree = "<group>"; };
+		6140FFAB1F5FDB750085674D /* DKSChatKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKSChatKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6140FFAF1F5FDB750085674D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6140FFB11F5FDB750085674D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6140FFB21F5FDB750085674D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6140FFB41F5FDB750085674D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6140FFB51F5FDB750085674D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6140FFB81F5FDB750085674D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6140FFBA1F5FDB750085674D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6140FFBD1F5FDB750085674D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6140FFBF1F5FDB750085674D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6140FFA81F5FDB750085674D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6104E7FE1FFE0D960041E86B /* ThirdPath */ = {
+			isa = PBXGroup;
+			children = (
+				6104E8041FFE0D960041E86B /* DKSKeyBoard */,
+			);
+			path = ThirdPath;
+			sourceTree = "<group>";
+		};
+		6104E8041FFE0D960041E86B /* DKSKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				6104E8051FFE0D960041E86B /* DKSKeyboard.h */,
+				6104E8061FFE0D960041E86B /* DKSKeyboard.m */,
+				6104E8071FFE0D960041E86B /* DKSTextView.h */,
+				6104E8081FFE0D960041E86B /* DKSTextView.m */,
+				6104E80D1FFE21270041E86B /* DKSMoreView.h */,
+				6104E80E1FFE21270041E86B /* DKSMoreView.m */,
+				6104E8101FFE215B0041E86B /* DKSEmojiView.h */,
+				6104E8111FFE215B0041E86B /* DKSEmojiView.m */,
+				613841F81FFF620200407CC0 /* UIView+FrameTool.h */,
+				613841F91FFF620200407CC0 /* UIView+FrameTool.m */,
+			);
+			path = DKSKeyBoard;
+			sourceTree = "<group>";
+		};
+		6140FFA21F5FDB750085674D = {
+			isa = PBXGroup;
+			children = (
+				6140FFAD1F5FDB750085674D /* DKSChatKeyboard */,
+				6140FFAC1F5FDB750085674D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6140FFAC1F5FDB750085674D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6140FFAB1F5FDB750085674D /* DKSChatKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6140FFAD1F5FDB750085674D /* DKSChatKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6104E7FE1FFE0D960041E86B /* ThirdPath */,
+				6140FFB11F5FDB750085674D /* AppDelegate.h */,
+				6140FFB21F5FDB750085674D /* AppDelegate.m */,
+				6140FFB41F5FDB750085674D /* ViewController.h */,
+				6140FFB51F5FDB750085674D /* ViewController.m */,
+				6140FFB71F5FDB750085674D /* Main.storyboard */,
+				6140FFBA1F5FDB750085674D /* Assets.xcassets */,
+				6140FFBC1F5FDB750085674D /* LaunchScreen.storyboard */,
+				6140FFBF1F5FDB750085674D /* Info.plist */,
+				6140FFAE1F5FDB750085674D /* Supporting Files */,
+			);
+			path = DKSChatKeyboard;
+			sourceTree = "<group>";
+		};
+		6140FFAE1F5FDB750085674D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6140FFAF1F5FDB750085674D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6140FFAA1F5FDB750085674D /* DKSChatKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6140FFC21F5FDB750085674D /* Build configuration list for PBXNativeTarget "DKSChatKeyboard" */;
+			buildPhases = (
+				6140FFA71F5FDB750085674D /* Sources */,
+				6140FFA81F5FDB750085674D /* Frameworks */,
+				6140FFA91F5FDB750085674D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DKSChatKeyboard;
+			productName = DKSChatKeyboard;
+			productReference = 6140FFAB1F5FDB750085674D /* DKSChatKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6140FFA31F5FDB750085674D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = DuKaiShun;
+				TargetAttributes = {
+					6140FFAA1F5FDB750085674D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X42645MK9G;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6140FFA61F5FDB750085674D /* Build configuration list for PBXProject "DKSChatKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6140FFA21F5FDB750085674D;
+			productRefGroup = 6140FFAC1F5FDB750085674D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6140FFAA1F5FDB750085674D /* DKSChatKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6140FFA91F5FDB750085674D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6140FFBE1F5FDB750085674D /* LaunchScreen.storyboard in Resources */,
+				6140FFBB1F5FDB750085674D /* Assets.xcassets in Resources */,
+				6140FFB91F5FDB750085674D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6140FFA71F5FDB750085674D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6104E80F1FFE21270041E86B /* DKSMoreView.m in Sources */,
+				6140FFB61F5FDB750085674D /* ViewController.m in Sources */,
+				613841FA1FFF620200407CC0 /* UIView+FrameTool.m in Sources */,
+				6104E80C1FFE0D960041E86B /* DKSTextView.m in Sources */,
+				6104E80B1FFE0D960041E86B /* DKSKeyboard.m in Sources */,
+				6104E8121FFE215B0041E86B /* DKSEmojiView.m in Sources */,
+				6140FFB31F5FDB750085674D /* AppDelegate.m in Sources */,
+				6140FFB01F5FDB750085674D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6140FFB71F5FDB750085674D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6140FFB81F5FDB750085674D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6140FFBC1F5FDB750085674D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6140FFBD1F5FDB750085674D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6140FFC01F5FDB750085674D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6140FFC11F5FDB750085674D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6140FFC31F5FDB750085674D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X42645MK9G;
+				INFOPLIST_FILE = DKSChatKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robooot.DKSChatKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6140FFC41F5FDB750085674D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X42645MK9G;
+				INFOPLIST_FILE = DKSChatKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robooot.DKSChatKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6140FFA61F5FDB750085674D /* Build configuration list for PBXProject "DKSChatKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6140FFC01F5FDB750085674D /* Debug */,
+				6140FFC11F5FDB750085674D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6140FFC21F5FDB750085674D /* Build configuration list for PBXNativeTarget "DKSChatKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6140FFC31F5FDB750085674D /* Debug */,
+				6140FFC41F5FDB750085674D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6140FFA31F5FDB750085674D /* Project object */;
+}
