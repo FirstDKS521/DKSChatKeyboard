@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6104E80B1FFE0D960041E86B /* DKSKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E8061FFE0D960041E86B /* DKSKeyboard.m */; };
+		6104E80B1FFE0D960041E86B /* DKSKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E8061FFE0D960041E86B /* DKSKeyboardView.m */; };
 		6104E80C1FFE0D960041E86B /* DKSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E8081FFE0D960041E86B /* DKSTextView.m */; };
 		6104E80F1FFE21270041E86B /* DKSMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E80E1FFE21270041E86B /* DKSMoreView.m */; };
 		6104E8121FFE215B0041E86B /* DKSEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E8111FFE215B0041E86B /* DKSEmojiView.m */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6104E8051FFE0D960041E86B /* DKSKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKSKeyboard.h; sourceTree = "<group>"; };
-		6104E8061FFE0D960041E86B /* DKSKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKSKeyboard.m; sourceTree = "<group>"; };
+		6104E8051FFE0D960041E86B /* DKSKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKSKeyboardView.h; sourceTree = "<group>"; };
+		6104E8061FFE0D960041E86B /* DKSKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKSKeyboardView.m; sourceTree = "<group>"; };
 		6104E8071FFE0D960041E86B /* DKSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKSTextView.h; sourceTree = "<group>"; };
 		6104E8081FFE0D960041E86B /* DKSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKSTextView.m; sourceTree = "<group>"; };
 		6104E80D1FFE21270041E86B /* DKSMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKSMoreView.h; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		6104E8041FFE0D960041E86B /* DKSKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				6104E8051FFE0D960041E86B /* DKSKeyboard.h */,
-				6104E8061FFE0D960041E86B /* DKSKeyboard.m */,
+				6104E8051FFE0D960041E86B /* DKSKeyboardView.h */,
+				6104E8061FFE0D960041E86B /* DKSKeyboardView.m */,
 				6104E8071FFE0D960041E86B /* DKSTextView.h */,
 				6104E8081FFE0D960041E86B /* DKSTextView.m */,
 				6104E80D1FFE21270041E86B /* DKSMoreView.h */,
@@ -196,7 +196,7 @@
 				6140FFB61F5FDB750085674D /* ViewController.m in Sources */,
 				613841FA1FFF620200407CC0 /* UIView+FrameTool.m in Sources */,
 				6104E80C1FFE0D960041E86B /* DKSTextView.m in Sources */,
-				6104E80B1FFE0D960041E86B /* DKSKeyboard.m in Sources */,
+				6104E80B1FFE0D960041E86B /* DKSKeyboardView.m in Sources */,
 				6104E8121FFE215B0041E86B /* DKSEmojiView.m in Sources */,
 				6140FFB31F5FDB750085674D /* AppDelegate.m in Sources */,
 				6140FFB01F5FDB750085674D /* main.m in Sources */,

@@ -7,37 +7,38 @@
 //
 
 #import "ViewController.h"
-#import "DKSKeyboard.h"
+#import "DKSKeyboardView.h"
 #import "DKSTextView.h"
 
 #define K_Width [UIScreen mainScreen].bounds.size.width
 #define K_Height [UIScreen mainScreen].bounds.size.height
-@interface ViewController ()
+@interface ViewController ()<DKSKeyboardDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
-@property (nonatomic, strong) DKSKeyboard *keyView;
+@property (nonatomic, strong) DKSKeyboardView *keyView;
 
 @end
 
 @implementation ViewController
 
-{
-    CGFloat masH;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.92 green:0.92 blue:0.92 alpha:1.00];
     
-//    UILabel *label = [UILabel new];
-//    label.backgroundColor = [UIColor orangeColor];
-//    label.text = @"我是聊天内容";
-//    label.frame = CGRectMake(50, K_Height - 150, K_Width - 100, 50);
-//    label.textAlignment = NSTextAlignmentCenter;
-//    [self.view addSubview:label];
-    
-    self.keyView = [[DKSKeyboard alloc] initWithFrame:CGRectMake(0, K_Height - 51, K_Width, 51)];
+    self.keyView = [[DKSKeyboardView alloc] initWithFrame:CGRectMake(0, K_Height - 51, K_Width, 51)];
+    //设置代理方法
+    self.keyView.delegate = self;
     [self.view addSubview:_keyView];
+}
+
+#pragma mark ====== DKSKeyboardDelegate ======
+//在UITableView下，改变其frame
+- (void)changeFrameWithMinY:(CGFloat)height {
+    NSLog(@"%@", @(height));
+}
+
+- (void)textViewContentText:(NSString *)textStr {
+    self.contentLabel.text = textStr;
 }
 
 #pragma mark ====== 回收键盘 ======
