@@ -2,7 +2,7 @@
 
 >经常使用微信聊天，没事儿就会想输入框的实现过程，所以抽空，也实现了一个输入框的功能；
 
-![效果图.jpeg](http://upload-images.jianshu.io/upload_images/1840399-6ec799943a9a72f2.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![效果GIF.gif](http://upload-images.jianshu.io/upload_images/1840399-4273a1c1c52dcab2.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![效果图.jpeg](http://upload-images.jianshu.io/upload_images/1840399-dc3ac90efba61889.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)   ![效果GIF.gif](http://upload-images.jianshu.io/upload_images/1840399-95c33025b73954e1.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 经过封装，使用就非常的简单了，在需要的VC中，实现方法如下：
@@ -39,18 +39,16 @@ DKSTextView | 设置输入行数，输入框内容变化时改变输入款高度
 @optional //非必实现的方法
 
 /**
- 输入框内容变化时，改变当前VC的view的frame
-
- @param height 最小Y值
- */
-- (void)changeFrameWithMinY:(CGFloat)height;
-
-/**
  点击发送时输入框内的文案
 
  @param textStr 文案
  */
 - (void)textViewContentText:(NSString *)textStr;
+
+/**
+ 键盘的frame改变
+ */
+- (void)keyboardChangeFrameWithMinY:(CGFloat)minY;
 
 @end
 
@@ -60,7 +58,7 @@ DKSTextView | 设置输入行数，输入框内容变化时改变输入款高度
 
 @end
 ```
-关于上面的两个代理方法，目前只是简单的实现了一下，具体的实现，还需自行处理，我这里只是给出了一个大概方向；`（关键是我也没考虑清楚，如何更好的实现键盘弹起，当前的VC视图上移，我后续还会继续完善，如果哪位大侠有好的想法，欢迎留言讨论`
+关于上面的两个代理方法，由于文章篇幅问题，实现的过程可参考demo，里面有详细的注释；
 
 ####在DKSKeyboardView.m中，以下列出少量重要代码，主要是改变frame
 ###1、点击输入框，键盘出现
@@ -70,43 +68,55 @@ DKSTextView | 设置输入行数，输入框内容变化时改变输入款高度
     [self removeBottomViewFromSupview];
     NSDictionary *userInfo = notification.userInfo;
     CGRect endFrame = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    //获取键盘的高度
     self.keyboardHeight = endFrame.size.height;
+    
+    //键盘的动画时长
     CGFloat duration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-    UIViewAnimationCurve curve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
-    [UIView animateWithDuration:duration delay:0.0f options:(curve << 16 | UIViewAnimationOptionBeginFromCurrentState) animations:^{
-        self.frame = CGRectMake(0, endFrame.origin.y - self.textView.height - viewMargin * 2, K_Width, self.textView.height + viewMargin * 2);
+    [UIView animateWithDuration:duration delay:0 options:[notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue] animations:^{
+        self.frame = CGRectMake(0, endFrame.origin.y - self.backView.height - StatusNav_Height, K_Width, self.height);
+        [self changeTableViewFrame];
     } completion:nil];
 }
 ```
-###2、点击更多按钮
+###2、键盘消失
+```
+- (void)keyboardWillHide:(NSNotification *)notification {
+    //如果是弹出了底部视图时
+    if (self.moreClick || self.emojiClick) {
+        return;
+    }
+    [UIView animateWithDuration:0.25 animations:^{
+        self.frame = CGRectMake(0, K_Height - StatusNav_Height - self.backView.height, K_Width, self.backView.height);
+        [self changeTableViewFrame];
+    }];
+}
+```
+
+###3、点击更多按钮
 ```
 - (void)moreBtn:(UIButton *)btn {
     self.emojiClick = NO; //主要是设置表情按钮为未点击状态
     if (self.moreClick == NO) {
         self.moreClick = YES;
+        //回收键盘
+        [self.textView resignFirstResponder];
         [self.emojiView removeFromSuperview];
         self.emojiView = nil;
         [self addSubview:self.moreView];
         //改变更多、self的frame
         [UIView animateWithDuration:0.25 animations:^{
             self.moreView.frame = CGRectMake(0, self.backView.height, K_Width, bottomHeight);
-            self.frame = CGRectMake(0, K_Height - self.backView.height - bottomHeight, K_Width, self.backView.height + bottomHeight);
+            self.frame = CGRectMake(0, K_Height - StatusNav_Height - self.backView.height - bottomHeight, K_Width, self.backView.height + bottomHeight);
+            [self changeTableViewFrame];
         }];
-        //回收键盘
-        [self.textView resignFirstResponder];
     } else { //再次点击更多按钮
-        self.moreClick = NO;
-        [self.moreView removeFromSuperview];
-        //先把当前视图的frame移至底部
-        [UIView animateWithDuration:0.25 animations:^{
-            self.frame = CGRectMake(0, K_Height - self.height, K_Width, self.height);
-        }];
         //键盘弹起
         [self.textView becomeFirstResponder];
     }
 }
 ```
-###3、改变输入框大小
+###4、改变输入框大小
 ```
 - (void)changeFrame:(CGFloat)height {
     CGRect frame = self.textView.frame;
@@ -126,11 +136,9 @@ DKSTextView | 设置输入行数，输入框内容变化时改变输入款高度
 ```
 
 以上就是聊天输入框的简单实现，只是提供一个实现思路，如果在聊天界面中接入，还需要处理以下问题：
->1、键盘弹起，判断当前的UITableView的最后一行cell和当前输入框视图最小的Y值进行对比，处理当前VC是否上移；
+>1、demo中没有做tableViewCell的高度自适应；
 >
->2、输入框文案较多时，输入框的高度变化，同样要做第一条的判断；
->
->3、键盘收起，改变当前VC的view的frame；
+>2、输入框文案较多时，tableViewCell可能会出现紊乱，此处没有处理
 
 demo中如果有任何问题，欢迎各位留言拍砖，小弟一定更正，共同学习；
 

@@ -14,10 +14,13 @@
 		613841FA1FFF620200407CC0 /* UIView+FrameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 613841F91FFF620200407CC0 /* UIView+FrameTool.m */; };
 		6140FFB01F5FDB750085674D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140FFAF1F5FDB750085674D /* main.m */; };
 		6140FFB31F5FDB750085674D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140FFB21F5FDB750085674D /* AppDelegate.m */; };
-		6140FFB61F5FDB750085674D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140FFB51F5FDB750085674D /* ViewController.m */; };
+		6140FFB61F5FDB750085674D /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6140FFB51F5FDB750085674D /* ChatViewController.m */; };
 		6140FFB91F5FDB750085674D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6140FFB71F5FDB750085674D /* Main.storyboard */; };
 		6140FFBB1F5FDB750085674D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6140FFBA1F5FDB750085674D /* Assets.xcassets */; };
 		6140FFBE1F5FDB750085674D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6140FFBC1F5FDB750085674D /* LaunchScreen.storyboard */; };
+		615C338B2008B2AF00DD3A69 /* ChatViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 615C33892008B2AF00DD3A69 /* ChatViewCell.m */; };
+		615C338C2008B2AF00DD3A69 /* ChatViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615C338A2008B2AF00DD3A69 /* ChatViewCell.xib */; };
+		61E1CB5220089A5F008E1016 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E1CB5020089A5F008E1016 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,12 +38,17 @@
 		6140FFAF1F5FDB750085674D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6140FFB11F5FDB750085674D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6140FFB21F5FDB750085674D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6140FFB41F5FDB750085674D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6140FFB51F5FDB750085674D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6140FFB41F5FDB750085674D /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		6140FFB51F5FDB750085674D /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		6140FFB81F5FDB750085674D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6140FFBA1F5FDB750085674D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6140FFBD1F5FDB750085674D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6140FFBF1F5FDB750085674D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		615C33882008B2AF00DD3A69 /* ChatViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewCell.h; sourceTree = "<group>"; };
+		615C33892008B2AF00DD3A69 /* ChatViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewCell.m; sourceTree = "<group>"; };
+		615C338A2008B2AF00DD3A69 /* ChatViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewCell.xib; sourceTree = "<group>"; };
+		61E1CB4F20089A5F008E1016 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		61E1CB5020089A5F008E1016 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,13 @@
 				6104E7FE1FFE0D960041E86B /* ThirdPath */,
 				6140FFB11F5FDB750085674D /* AppDelegate.h */,
 				6140FFB21F5FDB750085674D /* AppDelegate.m */,
-				6140FFB41F5FDB750085674D /* ViewController.h */,
-				6140FFB51F5FDB750085674D /* ViewController.m */,
+				61E1CB4F20089A5F008E1016 /* RootViewController.h */,
+				61E1CB5020089A5F008E1016 /* RootViewController.m */,
+				6140FFB41F5FDB750085674D /* ChatViewController.h */,
+				6140FFB51F5FDB750085674D /* ChatViewController.m */,
+				615C33882008B2AF00DD3A69 /* ChatViewCell.h */,
+				615C33892008B2AF00DD3A69 /* ChatViewCell.m */,
+				615C338A2008B2AF00DD3A69 /* ChatViewCell.xib */,
 				6140FFB71F5FDB750085674D /* Main.storyboard */,
 				6140FFBA1F5FDB750085674D /* Assets.xcassets */,
 				6140FFBC1F5FDB750085674D /* LaunchScreen.storyboard */,
@@ -179,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615C338C2008B2AF00DD3A69 /* ChatViewCell.xib in Resources */,
 				6140FFBE1F5FDB750085674D /* LaunchScreen.storyboard in Resources */,
 				6140FFBB1F5FDB750085674D /* Assets.xcassets in Resources */,
 				6140FFB91F5FDB750085674D /* Main.storyboard in Resources */,
@@ -193,10 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6104E80F1FFE21270041E86B /* DKSMoreView.m in Sources */,
-				6140FFB61F5FDB750085674D /* ViewController.m in Sources */,
+				6140FFB61F5FDB750085674D /* ChatViewController.m in Sources */,
+				615C338B2008B2AF00DD3A69 /* ChatViewCell.m in Sources */,
 				613841FA1FFF620200407CC0 /* UIView+FrameTool.m in Sources */,
 				6104E80C1FFE0D960041E86B /* DKSTextView.m in Sources */,
 				6104E80B1FFE0D960041E86B /* DKSKeyboardView.m in Sources */,
+				61E1CB5220089A5F008E1016 /* RootViewController.m in Sources */,
 				6104E8121FFE215B0041E86B /* DKSEmojiView.m in Sources */,
 				6140FFB31F5FDB750085674D /* AppDelegate.m in Sources */,
 				6140FFB01F5FDB750085674D /* main.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ChatViewController.h
 //  DKSChatKeyboard
 //
 //  Created by aDu on 2017/9/6.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ChatViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 
 
 @end

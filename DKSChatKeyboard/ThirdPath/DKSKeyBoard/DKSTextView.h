@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^TextHeightChangedBlock)(NSString *text, CGFloat textHeight);
+typedef void(^TextHeightChangedBlock)(CGFloat textHeight);
 @interface DKSTextView : UITextView
 
 /**

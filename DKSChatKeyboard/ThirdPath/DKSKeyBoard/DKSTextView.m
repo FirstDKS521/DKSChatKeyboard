@@ -13,14 +13,9 @@ static float textFont = 25; //文案字体大小
 @interface DKSTextView ()
 
 /**
- *  文字高度
+ 文字最大高度
  */
-@property (nonatomic, assign) NSInteger textH;
-
-/**
- *  文字最大高度
- */
-@property (nonatomic, assign) NSInteger maxTextH;
+@property (nonatomic, assign) CGFloat maxTextH;
 
 @end
 
@@ -51,13 +46,13 @@ static float textFont = 25; //文案字体大小
     //计算高度
     CGFloat height = ceilf([self sizeThatFits:CGSizeMake(self.frame.size.width, MAXFLOAT)].height);
     if (height > _maxTextH) {
-        self.scrollEnabled = YES;   //当textView大于最大高度的时候让其可以滚动
         height = _maxTextH;
+        self.scrollEnabled = YES;   //当textView大于最大高度的时候让其可以滚动
     } else {
         self.scrollEnabled = NO;
-    }
-    if (_textChangedBlock && self.scrollEnabled == NO) {
-        _textChangedBlock(self.text, height);
+        if (_textChangedBlock && self.scrollEnabled == NO) {
+            _textChangedBlock(height);
+        }
     }
     [self layoutIfNeeded];
 }

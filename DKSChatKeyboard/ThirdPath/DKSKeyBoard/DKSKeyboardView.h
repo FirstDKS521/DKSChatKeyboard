@@ -13,18 +13,16 @@
 @optional //非必实现的方法
 
 /**
- 输入框内容变化时，改变当前VC的view的frame
-
- @param height 最小Y值
- */
-- (void)changeFrameWithMinY:(CGFloat)height;
-
-/**
  点击发送时输入框内的文案
 
  @param textStr 文案
  */
 - (void)textViewContentText:(NSString *)textStr;
+
+/**
+ 键盘的frame改变
+ */
+- (void)keyboardChangeFrameWithMinY:(CGFloat)minY;
 
 @end
 
